@@ -8,10 +8,9 @@ int S, D;
 
 int main()
 {
-     setlocale(LC_ALL, "RUS");
     
-     cout << "Сумма вклада: ";
+     cout << "Deposit amount: ";
          cin >> S;     
-     cout << "Количество дней вклада: ";
+     cout << "Amount of days: ";
          cin >> D;
 }
