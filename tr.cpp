@@ -6,6 +6,7 @@ using namespace std;
 
 int S, D, flag;
 int CorF (int, int);
+int DayF (int, int);
 
 int main()
 {
@@ -17,6 +18,10 @@ int main()
          
          CorF (S, D);
          
+         if (flag!=1)
+         DayF (S,D);
+       
+         cout << endl;
          system ("PAUSE");
          
 }
@@ -31,3 +36,29 @@ int main()
             }
            }         
            
+    int DayF (int, int)
+{
+        if (S<100000)
+        {
+        if (D > -1 && D <= 30)
+           cout << "Income= " << S*0.9;
+        if (D > 30 && D <= 120)
+             cout << "Income= " << S*1.02;
+        if (D > 120 && D <= 240)
+            cout << "Income= " << S*1.06;
+        if (D > 241 && D <= 365)
+            cout << "Income= " << S*1.12;
+        }
+        else
+        {
+        if (D > -1 && D <= 30)
+            cout<< "Income= " << S*0.9;
+        if (D > 30 && D <= 120)
+             cout<< "Income= " << S*1.03;
+        if (D > 120 && D <= 240)
+             cout<< "Income= " << S*1.08;
+        if (D > 241 & D <= 365)
+            cout<< "Income= " << S*1.15;
+        }
+}
+
