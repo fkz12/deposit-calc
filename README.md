@@ -1,2 +1,2 @@
 # deposit-calc
-# Вариант 2
+# Variant 2
