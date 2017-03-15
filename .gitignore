@@ -1,4 +1,5 @@
 tr
+!name.o
 *.o
 *.swp
 *.~
