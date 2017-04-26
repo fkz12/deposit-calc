@@ -42,5 +42,7 @@ $(TEST_OBJ_DIR)/validation_test.o: test/validation_test.c
 .c.o:
 	$(CC) $(CFLAGS) $< -o $@
 
+.PHONY: clean
+
 clean:
 	rm -rf build/ bin/
